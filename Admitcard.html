@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admit card </title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Aman Arj</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://gpmau.in/">My-College</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/curious_coder_aman/?hl=en">Instagram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/c/AMANARJ7">YouTube</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 query" value="" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success searchBtn" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-6 col-12 mx-auto">
+                <div class="p-4 bg-white rounded shadow-lg">
+                    <h3 class="mb-2 text-center text-primary"> Old Result 2022</h3>
+                    <p class="text-center lead mx-4 text-black-50">Download Result Card of bteup exam</p>
+
+                    <label class="font-500">Enrollment No.</label>
+                    <input id="enroll" name="enroll" class="form-control form-control-lg mb-3 querys" value="" type="text" required="" maxlength="15">
+                    <a id="download_admitcard"> <button class="btn btn-primary btn-lg w-100 shadow-lg mt-4 searchBtns">Download</button></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <hr class="featurette-divider">
+
+    <div class="container">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1 text-info">Aman Yadav (Designer). <span class="text-muted">Welcome to
+                        my page.</span></h2>
+                <p class="lead">My self Aman Yadav student on Government Polytechnic Mau, and this page have no database.
+                    And connect with me on social media click on following social media icons .</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                    height="400" src="IMAGE/my.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    
+ 
+
+    <div class="py-4 fw-light bg-dark text-white ">
+        <div class="container">
+          <div class="align-items-center row">
+            <div class="text-center text-md-start col-md-6">
+              <p class="text-sm mb-md-0">© 2021, Your company. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-end">
+                <li class="list-inline-item"><a class="nav-link" href="   https://www.linkedin.com/in/aman-yadav-69b336246/"><img width="32" height="32" src="IMAGE/linkedin.png" alt="whatsapp" class="w-2rem"></a></li>
+                <li class="list-inline-item"><a class="nav-link" href="https://www.youtube.com/c/AMANARJ7"><img src="IMAGE/youtube.png" width="32" height="32" alt="youtube" class="w-2rem"></a>
+                </li>
+                <li class="list-inline-item"><a class="nav-link" href="https://www.instagram.com/curious_coder_aman/?hl=en"><img src="IMAGE/whatsapp.png" width="32" height="32" alt="linkdin" class="w-2rem"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        let query = document.querySelector('.query');
+        let searchBtn = document.querySelector('.searchBtn');
+
+        searchBtn.onclick = function(){
+            let url ='https://www.google.com/search?q='+query.value;
+            window.open(url);
+        }
+
+        let querys = document.querySelector('.querys');
+        let searchBtns = document.querySelector('.searchBtns');
+
+        searchBtns.onclick = function(){
+            let url ='http://result.bteupexam.in/Odd_Semester/main/result.aspx?Roll_no='+querys.value;
+            window.open(url);
+        }
+    </script>
+</body>
+</html>
